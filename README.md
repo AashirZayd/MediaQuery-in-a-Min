@@ -128,6 +128,4 @@ Simply open `index.html` in your browser or use **Live Server** in VS Code.
 ---
 
 ### ⭐ **Like this project? Give it a star on GitHub!** ⭐  
-```
 
----
