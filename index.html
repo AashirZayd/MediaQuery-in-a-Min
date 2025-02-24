@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 2px dashed gray;
+        }
+
+        .example {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-weight: bold;
+            white-space: pre-wrap;
+        }
+
+        /* Example 1: Basic Responsive Design */
+        @media (max-width: 600px) {
+            .example-1 {
+                background-color: lightblue;
+            }
+        }
+
+        /* Example 2: Min-Width for Larger Screens */
+        @media (min-width: 800px) {
+            .example-2 {
+                background-color: lightgreen;
+            }
+        }
+
+        /* Example 3: Orientation Based */
+        @media (orientation: landscape) {
+            .example-3 {
+                background-color: orange;
+            }
+        }
+
+        /* Example 4: Dark Mode Preference */
+        @media (prefers-color-scheme: dark) {
+            .example-4 {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        /* Example 5: Print-Specific Styles */
+        @media print {
+            .example-5 {
+                background-color: white;
+                color: black;
+                font-style: italic;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Media Queries Demonstration</h1>
+    <p>Media queries allow web pages to be responsive by applying different styles based on screen size, orientation, or user preferences.</p>
+
+    <!-- Example 1: Max-Width -->
+    <div class="container">
+        <h2>1. Basic Responsive Design (Max-Width)</h2>
+        <p>This example changes the background when the viewport width is **600px or less**.</p>
+        <div class="example example-1">Resize the window to see the effect!</div>
+        <p class="code-snippet">
+            @media (max-width: 600px) { <br>
+            &nbsp;&nbsp;.example { background-color: lightblue; } <br>
+            }
+        </p>
+    </div>
+
+    <!-- Example 2: Min-Width -->
+    <div class="container">
+        <h2>2. Min-Width for Larger Screens</h2>
+        <p>When the viewport is **800px or wider**, the background color changes.</p>
+        <div class="example example-2">Resize to a larger screen to see the effect!</div>
+        <p class="code-snippet">
+            @media (min-width: 800px) { <br>
+            &nbsp;&nbsp;.example { background-color: lightgreen; } <br>
+            }
+        </p>
+    </div>
+
+    <!-- Example 3: Orientation-Based -->
+    <div class="container">
+        <h2>3. Orientation Based Styling</h2>
+        <p>Changes background color when the device is in **landscape mode**.</p>
+        <div class="example example-3">Rotate your device to see the effect!</div>
+        <p class="code-snippet">
+            @media (orientation: landscape) { <br>
+            &nbsp;&nbsp;.example { background-color: orange; } <br>
+            }
+        </p>
+    </div>
+
+    <!-- Example 4: Dark Mode Preference -->
+    <div class="container">
+        <h2>4. Dark Mode Support</h2>
+        <p>If the user prefers **dark mode**, this section will change its appearance.</p>
+        <div class="example example-4">Try enabling dark mode in your system settings.</div>
+        <p class="code-snippet">
+            @media (prefers-color-scheme: dark) { <br>
+            &nbsp;&nbsp;.example { background-color: black; color: white; } <br>
+            }
+        </p>
+    </div>
+
+    <!-- Example 5: Print-Specific Styles -->
+    <div class="container">
+        <h2>5. Print-Specific Styles</h2>
+        <p>This section will have a different style **when printed**.</p>
+        <div class="example example-5">Try printing this page to see the effect.</div>
+        <p class="code-snippet">
+            @media print { <br>
+            &nbsp;&nbsp;.example { background-color: white; color: black; font-style: italic; } <br>
+            }
+        </p>
+    </div>
+
+    <footer style="margin-top: 20px; text-align: center; font-weight: bold;">
+        Demonstrated by Aashir Zayd
+        <br>
+        <a href="https://www.linkedin.com/in/aashir-zayd-b28136275/" target="_blank">
+            Connect on LinkedIn
+        </a>
+    </footer>
+
+</body>
+</html>
